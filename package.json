@@ -1,0 +1,25 @@
+{
+     "name":"docker_web_app",
+     "version":"1.0.0",
+     "description":"project node.js and docker",
+     "author":"Cesar Diaz",
+     "main":"server.js",
+     "scripts":{
+	"start":"node server.js"
+     },
+     "dependencies":{
+	"express":"^4.13.3",
+	"multer":"1.1.0",
+	"csv-parse":"1.0.1",
+	"async":"1.5.2",
+	"pg":"4.4.0",
+	"pg-native":"1.10.0"
+     },
+     "devDependencies":{
+	"should":"~7.1.0",
+	"mocha":"~2.3.3",
+	"supertest":"~1.1.0",
+	"loadtest":"*"
+     }
+     
+}

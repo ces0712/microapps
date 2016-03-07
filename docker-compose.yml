@@ -1,0 +1,14 @@
+db:
+    image: postgresql5
+    expose:
+      - 5432
+myapp:
+    build: . 
+    ports: 
+      - "49160:8080"
+    links:
+      - db
+    environment:
+      - PGHOST=db
+      - PGDATABASE=upload
+      - PGUSER=upload
